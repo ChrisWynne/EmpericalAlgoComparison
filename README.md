@@ -23,9 +23,11 @@ The second comparison was just a total average accuracy across all splits and al
 # Conclusion
 Here are the results from each training split:
 
-pictures
+![TrainSplits]('EmpiricalComparisonTrainSplits.png')
 
 Here are the results that were averaged from all splits of all datasets:
+
+![MeanResults]('EmpiricalComparisonMeanResults.png')
 
 In conclusion, the Random Forest outperformed K Nearest Neighbors and Decision Tree across every accuracy metric, and across every training split. As for the different training splits, all data pointed towards more training data leads to better testing results. Some data sets were relatively easy to classify, so the difference is not as great for the bigger splits. If the splits were 10%, 50%, 90%, we would see a bigger difference in performance among the classifiers. Random Forest also outperformed the other algorithms when comparing total averages, avoiding Simpson’s paradox. Decision Tree was a universal second place, and KNN performed the worst in every case, although not by much. However, the consistency of these results leads me to rank the classifiers as follows:
 
